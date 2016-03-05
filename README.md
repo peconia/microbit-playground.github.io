@@ -1,4 +1,4 @@
-* micro:bit Playground is at https://microbit-playground.github.io
+* micro:bit playground website is at https://microbit-playground.github.io
 * All micro:bit programs can be [downloaded as a zip file](https://microbit-playground.github.io/build/microbit-playground-code.zip).
 
 ## About
@@ -21,7 +21,7 @@ Please (please! please!) send me your python code and a brief overview of how yo
 ##### Geeky Way:
 
 1. `git clone git@github.com:microbit-playground/microbit-playground.github.io.git`
-2. Document your code with `/template/program-template.md` or `/templates/program-template-bare.md`.
+2. Document your code with `/templates/program-template.md` or `/templates/program-template-bare.md`.
 3. Copy your `.py` and `.md` files to `/code/easy/_posts/` or `../medium/...` or `.../ninja/...` depending on difficulty. Naming scheme is `2016-02-24-my-program.*`.
 4. Edit `/templates/code-template-header.svg`, add your project name with a text editor and save to `/images/`. It's just an `xml` file.
 5. Copy any images to `/images/` with the same file name as your program, eg. `2016-02-24-my-code-1.jpg` and `2016-02-24-my-code-2.png`
