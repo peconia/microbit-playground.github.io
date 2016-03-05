@@ -9,22 +9,21 @@ This is the code used to generate the website. It uses Jekyll, a Ruby program, t
 
 ## Contributing
 
-Please (please! please!) send us Python code and a brief overview of how your program works. My enail is jez@geekteacher.co.uk.
+Please (please! please!) send me your python code and a brief overview of how your program works. My enail is jez@geekteacher.co.uk.
 
 ##### Easy Way:
 
-1. Document your code with `/template/code-template.md`
+1. Document your code with `[/template/program-template.md](https://raw.githubusercontent.com/microbit-playground/microbit-playground.github.io/master/templates/program-template.md)`
 2. Take photographs of your code or project.
 3. Email them to me at jez@geekteacher.co.uk.
 4. _Optional:_ Send through your name, photograph, webiste/twitter and a brief bio. These will be used to make you very cool author bio box!
 
-
 ##### Geeky Way:
 
-1. Clone the repo
-2. Document your code with `/template/program-template.md` or `/template/code-template-bare.md`.
+1. `git clone git@github.com:microbit-playground/microbit-playground.github.io.git`
+2. Document your code with `/template/program-template.md` or `/templates/program-template-bare.md`.
 3. Copy your `.py` and `.md` files to `/code/easy/_posts/` or `../medium/...` or `.../ninja/...` depending on difficulty. Naming scheme is `2016-02-24-my-program.*`.
-4. Edit `/template/code-template-header.svg`, add your project name with a text editor and save to `/images/`. It's just an `xml` file.
+4. Edit `/templates/code-template-header.svg`, add your project name with a text editor and save to `/images/`. It's just an `xml` file.
 5. Copy any images to `/images/` with the same file name as your program, eg. `2016-02-24-my-code-1.jpg` and `2016-02-24-my-code-2.png`
 6. Edit `authors.yml` in the `_data` directory with your personal information.
 6. Pull request
@@ -40,7 +39,7 @@ Please (please! please!) send us Python code and a brief overview of how your pr
 
 #### Running `gulp`
 
-_Do not use gulp!_ it's very messy! Here are some instructions if you insist:
+_There's no need to run `gulp`_ it's very messy!
 
 The website uses `gulp` to complete tasks for production. `Gulp` requires `node.js` to be installed.
 
@@ -63,6 +62,8 @@ Plugins are not loaded by GitHub pages so it defaults to using the plugin and lo
 
 #### Contributing
 
-Please follow the instructions above to contribute code.
+Please follow the instructions above to contribute whole projects.
 
-Changes to code or documentation either edit through the github interface or follow steps above.
+Changes to code or documentation can also be made this way or through the github interface.
+
+Send an email if you want to get involved.
