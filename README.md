@@ -3,9 +3,9 @@
 
 ## About
 
-micro:bit Playground publishes python code for kids to hack and mash (and hopefully learn something about Python!)
+micro:bit Playground publishes python code for kids to hack and mash (and hopefully learn something about python!)
 
-This is the code used to generate the website. It uses Jekyll, a ruby program, to turn markdown into beautiful pages.
+This repo contains the code used to generate the website. It uses Jekyll, a ruby program, to turn markdown into beautiful pages.
 
 ## Contributing
 
@@ -32,49 +32,48 @@ Please (please! please!) send me your python code and a brief overview of how yo
 
 ##### Running & Install Jekyll
 
-1. install bundler for ruby: `gem install bundler`
-2. install required gems: `bundler install`
-3. serve the website locally with installed gems: `bundle exec jekyll serve`
-4. visit `http://localhost:4000`
+1. clone this repo
+2. install bundler for ruby: `gem install bundler`
+3. install required gems: `bundler install`
+4. serve the website locally with installed gems: `bundle exec jekyll serve`
+5. visit `http://localhost:4000`
 
 The website loads javascript from a CDN. This helps the page load quickly (500ms!) but means the website looks... _retro_ without an internet connection.
 
-#### Running `gulp`
+##### Running `gulp`
 
 _There's no need to run `gulp`_ it's very messy!
 
 The website uses `gulp` to complete tasks for production. `gulp` requires `node.js` to be installed.
 
 * in main directory run `npm install`
-** `gulp scripts` to minify & combine javascript
-** `gulp zip` creates a zip file of all the programs.
-** `gulp svg2png`to convert svgs to pngs. This is used to make PNGs for opengraph (pretty Twitter cards).
+ * `gulp scripts` to minify & combine javascript
+ * `gulp zip` creates a zip file of all the programs.
+ * `gulp svg2png`to convert svgs to pngs. This is used to make PNGs for opengraph (pretty Twitter cards).
 
 `gulp images` is meant to smush images but please do not use it. The script should use graphicsmagic instead of gifsicle to smush gifs.
 
-## Notes
-
-#### Production / Development Environment
+##### Production / Development Environment
 
 * `\_config.yml` loads variables for the production environment (eg. `url: https://github...`)
 * `\_plugins\set_development_environment.rb` loads variables for development environment (eg. `url: http://localhost`)
 
 Plugins are not loaded by GitHub pages so it defaults to using the plugin and loading the development environment on localhost.
 
-#### TODO
+## TODO
 
 * More programs
 * Use gulp to build images from src/
 * ~~build pretty header images for opengraph (twitter cards/facebook etc)~~
 * Style guide & fix typos
-** micro:bit / Microbit / microbit
-** python / Python
-** licence / license 
-** practice / practise
-** noun / verb
-** etc 
+  * micro:bit / Microbit / microbit
+  * python / Python
+  * licence / license 
+  * practice / practise
+  * noun / verb
+  * etc 
 
-#### Contributing
+## Contributing
 
 Instructions are above or on the [developers page](https://jezdean.github.io/developers/). Programs for beginners are especially welcome.
 
