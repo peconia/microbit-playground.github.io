@@ -1,0 +1,21 @@
+# Site navigation links
+
+- title: Help
+  url: /getting-started/
+  excerpt: "Everything you need to know to get started with Skinny Bones and Jekyll."
+  image: 400x250.gif
+
+- title: Programs
+  url: /programs/
+  excerpt: "Projects you can do at home."
+  image: 400x250.gif
+
+- title: Developers
+  url: /developers/
+  excerpt: "Writing for the site."
+  image: 400x250.gif
+  
+- title: About
+  url: /about/
+  excerpt: "All about this site."
+  image: 400x250.gif

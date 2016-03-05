@@ -1,0 +1,24 @@
+
+<div class="wrap">
+<div class="tab-group">
+  <section id="tab1" title="Easy">
+
+{% for post in site.categories.easy %}
+  {% include post-grid.html %}
+{% endfor %}
+
+ </section>
+  <section id="tab2" title="Medium">
+{% for post in site.categories.medium %}
+  {% include post-grid.html %}
+{% endfor %}
+  </section>
+  <section id="tab3" title="Ninja">
+
+{% for post in site.categories.ninja %}
+  {% include post-grid.html %}
+{% endfor %}
+
+  </section>
+</div>
+</div>

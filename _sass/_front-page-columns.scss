@@ -1,0 +1,77 @@
+.front-page-container {
+	@include outer-container;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.front-page-right-column {
+	@include span-columns(7);
+}
+h3.cent {
+	text-align: center;
+	margin-top: 1em;
+	padding-top: 0px;
+}
+.front-page-left-column {
+	@include span-columns(5);
+	padding-bottom: 1.5em;
+	padding-top: 0px;
+	text-align: left;
+	background: rgba(black, 0.5);
+}
+.front-page-right-column-end {
+	@include span-columns(7);
+	vertical-align: top;
+	h3 {
+		padding: 0px !important;
+		margin: 0px;
+		margin-bottom: 1em;
+	}
+}
+.front-page-left-column-end {
+	@include span-columns(5);
+	vertical-align: top;
+	h3 {
+		padding: 0px !important;
+		margin: 0px;
+		margin-bottom: 1em;
+	}
+	.btn {
+		margin: 0px !important;
+	}
+}
+/// Project Page Styling
+.project-page h3 {
+	border-bottom: 1px solid $border-color;
+	padding-bottom: 0.5em !important;
+
+
+}
+
+
+
+.project-page h4 {
+margin-top: 1.5em;
+	font-weight: normal;
+	padding-bottom: 0em;
+	margin-bottom: 0em;
+	font-size: 1.4em;
+}
+
+.author-name {
+border: 0px !important;
+}
+
+
+.icon-cut:before {
+  content: "\f0c4";
+}
+
+fieldset h3 {
+	font-size:20px;
+	margin-top: 0px;
+}
+
+fieldset .btn {
+	margin-bottom: 0px;
+}

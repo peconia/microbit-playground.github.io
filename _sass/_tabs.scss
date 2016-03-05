@@ -1,0 +1,117 @@
+/* =========
+   Get Fonts */
+// @import url(https://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+// messed around with this.
+// @import url(/fonts/stylesheet.css);
+
+
+/* ================
+   Assign Variables */
+$primary-color: $accent-color;
+$secondary-color: #777;
+$radius: 0px;
+$border-width: 5px;
+
+
+// $serif: 'Amantic SC', sans-serif;
+// $sans-serif: 'Andika', sans-serif;
+
+/* ===========================
+   Setup Mixins/Helper Classes */
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/* ==========
+   Setup Page */
+
+*, *:before, *:after { box-sizing: border-box; }
+
+
+/* =================
+   Container Styling */
+.container {
+  position: relative;
+  background: white;
+  padding: 0em;
+  border-radius: $radius;
+  @extend .clearfix;
+}
+
+/* ===========
+   Tab Styling */
+
+
+.tab-group {
+  position: relative;
+  border-top: 2px solid #eee;
+  margin-top: 4.5em;
+  border-radius: 0 0 $radius $radius;
+  section {
+    opacity: 0;
+    height: 0;
+    padding: 0 1em;
+    overflow: hidden;
+    transition: opacity .4s ease, height .4s ease ;
+  }
+  section.active {
+    opacity: 1;
+    height: auto;
+    overflow: visible;
+
+
+  }
+}
+
+article.tile  {
+    margin-top:1em;
+
+
+
+}
+.tab-nav {
+  list-style: none;
+  margin: -2.5em -1px 0 0;
+  padding: 0;
+  @extend .clearfix;
+  height: 2.5em;
+  overflow: hidden;
+  li {
+    display: inline;
+    a {
+
+      top: 1px;
+      position: relative;
+      display: block;
+      float: left;
+
+      border-radius: $radius $radius 0 0;
+      background: #eee;
+      line-height: 2em;
+      padding: 0 1em;
+      text-decoration: none;
+      color: grey;
+      margin-top: .5em;
+      margin-right: 1px;
+      transition: background .2s ease, line-height .2s ease, margin .2s ease;
+    }
+    &.active a {
+      background: $primary-color;
+      color: white;
+      line-height: 2.5em;
+      margin-top: 0;
+    }
+  }
+}
+
+h2  a  {
+text-decoration: none;
+}
+
+h2  a:hover  {
+text-decoration: none;
+}
