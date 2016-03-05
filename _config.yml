@@ -5,7 +5,7 @@ title: "micro:bit Playground"
 description: "micro:bit playground"
 destination: _site
 
-url:  https://jezdean.github.io
+url:  https://microbit-playground.github.io
 subscribe_rss: /atom.xml
 baseurl:
 
