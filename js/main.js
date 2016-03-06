@@ -1,3 +1,79 @@
+(function (defaults, $, window, document, undefined) {
+
+	'use strict';
+
+	$.extend({
+		// Function to change the default propertiess of the plugin.
+		// Usage:
+		// jQuery.tabifySetup({property:'Custom value'}) ;
+		tabifySetup: function (options) {
+
+			return $.extend(defaults, options);
+		}
+	}).fn.extend({
+		// Usage:
+		// jQuery(selector).tabify({property:'value'});
+		tabify: function (options) {
+
+			options = $.extend({}, defaults, options);
+
+			return $(this).each(function () {
+				var $element, tabHTML, $tabs, $sections;
+
+				$element = $(this);
+				$sections = $element.children();
+
+				// Build tabHTML
+				tabHTML = '<ul class="tab-nav">';
+				$sections.each(function () {
+					if ($(this).attr("title") && $(this).attr("id")) {
+						tabHTML += '<li><a href="#' + $(this).attr("id") + '">' + $(this).attr("title") + '</a></li>';
+					}
+				});
+				tabHTML += '</ul>';
+
+				// Prepend navigation
+				$element.prepend(tabHTML);
+
+				// Load tabs
+				$tabs = $element.find('.tab-nav li');
+
+				// Functions
+				var activateTab = function (id) {
+					$tabs.filter('.active').removeClass('active');
+					$sections.filter('.active').removeClass('active');
+					$tabs.has('a[href="' + id + '"]').addClass('active');
+					$sections.filter(id).addClass('active');
+				};
+
+				// Setup events
+				$tabs.on('click', function (e) {
+					activateTab($(this).find('a').attr('href'));
+					e.preventDefault();
+				});
+
+				// Activate first tab
+				activateTab($tabs.first().find('a').attr('href'));
+
+			});
+		}
+	});
+})
+
+({
+	property: "value",
+	otherProperty: "value"
+}, jQuery, window, document);
+
+
+// Calling the plugin
+$('.tab-group').tabify();
+
+// FitVids
+$(document).ready(function(){
+$("#main").fitVids();
+});
+
 /*!
  * jQuery JavaScript Library v1.9.0
  * http://jquery.com/
@@ -9641,82 +9717,6 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
   
 // Works with either jQuery or Zepto
 })( window.jQuery || window.Zepto );
-
-(function (defaults, $, window, document, undefined) {
-
-	'use strict';
-
-	$.extend({
-		// Function to change the default propertiess of the plugin.
-		// Usage:
-		// jQuery.tabifySetup({property:'Custom value'}) ;
-		tabifySetup: function (options) {
-
-			return $.extend(defaults, options);
-		}
-	}).fn.extend({
-		// Usage:
-		// jQuery(selector).tabify({property:'value'});
-		tabify: function (options) {
-
-			options = $.extend({}, defaults, options);
-
-			return $(this).each(function () {
-				var $element, tabHTML, $tabs, $sections;
-
-				$element = $(this);
-				$sections = $element.children();
-
-				// Build tabHTML
-				tabHTML = '<ul class="tab-nav">';
-				$sections.each(function () {
-					if ($(this).attr("title") && $(this).attr("id")) {
-						tabHTML += '<li><a href="#' + $(this).attr("id") + '">' + $(this).attr("title") + '</a></li>';
-					}
-				});
-				tabHTML += '</ul>';
-
-				// Prepend navigation
-				$element.prepend(tabHTML);
-
-				// Load tabs
-				$tabs = $element.find('.tab-nav li');
-
-				// Functions
-				var activateTab = function (id) {
-					$tabs.filter('.active').removeClass('active');
-					$sections.filter('.active').removeClass('active');
-					$tabs.has('a[href="' + id + '"]').addClass('active');
-					$sections.filter(id).addClass('active');
-				};
-
-				// Setup events
-				$tabs.on('click', function (e) {
-					activateTab($(this).find('a').attr('href'));
-					e.preventDefault();
-				});
-
-				// Activate first tab
-				activateTab($tabs.first().find('a').attr('href'));
-
-			});
-		}
-	});
-})
-
-({
-	property: "value",
-	otherProperty: "value"
-}, jQuery, window, document);
-
-
-// Calling the plugin
-$('.tab-group').tabify();
-
-// FitVids
-$(document).ready(function(){
-$("#main").fitVids();
-});
 
 /**
  * StyleFix 1.0.3 & PrefixFree 1.0.7
