@@ -1,11 +1,11 @@
-* micro:bit Playground website is at https://microbit-playground.github.io
-* All micro:bit programs can be [downloaded as a zip file](https://microbit-playground.github.io/build/microbit-playground-code.zip).
+* micro:bit Playground website is at https://microbit-playground.co.uk
+* All micro:bit programs can be [downloaded as a zip file](https://microbit-playground.co.uk/build/microbit-playground-code.zip).
 
 ## About
 
 micro:bit Playground publishes python code for kids to hack and mash (and hopefully learn something about python!)
 
-This repo contains the code used to generate the website. It uses Jekyll, a ruby program, to turn markdown into beautiful pages.
+This repo contains the code used to generate the website. It uses Jekyll---a ruby program---to turn markdown into beautiful pages.
 
 ## Contributing
 
@@ -33,7 +33,7 @@ Please (please! please!) send me your python code and a brief overview of how yo
 ##### Running & Install Jekyll
 
 1. clone this repo
-2. install bundler for ruby: `gem install bundler`
+2. install bundler: `gem install bundler`
 3. install required gems: `bundler install`
 4. serve the website locally with installed gems: `bundle exec jekyll serve`
 5. visit `http://localhost:4000`
@@ -51,27 +51,29 @@ The website uses `gulp` to complete tasks for production. `gulp` requires `node.
  * `gulp zip` creates a zip file of all the programs.
  * `gulp svg2png`to convert svgs to pngs. This is used to make PNGs for opengraph (pretty Twitter cards).
 
-`gulp images` is meant to smush images but please do not use it. The script should use graphicsmagic instead of gifsicle to smush gifs.
+`gulp images` smushes images but do not use until a build/source directory for images is implemented.
 
 ##### Production / Development Environment
 
 * `\_config.yml` loads variables for the production environment (eg. `url: https://github...`)
 * `\_plugins\set_development_environment.rb` loads variables for development environment (eg. `url: http://localhost`)
 
-Plugins are not loaded by GitHub pages so it defaults to using the plugin and loading the development environment on localhost.
+Running the website on localhost loads the development variables from the plugin.
+Running the website on Github does not load a plugin so loads values from _config.yml.
 
 ## TODO
 
 * More programs
 * Use gulp to build images from src/
 * ~~build pretty header images for opengraph (twitter cards/facebook etc)~~
+* Fix jshint error messages when running `gulp scripts`
 * Style guide & fix typos
   * micro:bit / Microbit / microbit
   * python / Python
-  * licence / license 
+  * licence / license
   * practice / practise
   * noun / verb
-  * etc 
+  * etc
 
 ## Contributing
 
@@ -79,6 +81,6 @@ Instructions are above or on the [developers page](https://jezdean.github.io/dev
 
 Changes to code or documentation can be made this way or through the Github interface.
 
-Drop me an email if you have any ideas or want to get involved. 
+Drop me an email if you have any ideas or want to get involved.
 
 Carry on being amazing!

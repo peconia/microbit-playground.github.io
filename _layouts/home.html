@@ -9,6 +9,7 @@ layout: compress
     {% if jekyll.environment == "production" %}
       {% include google-tracking-code.html %}
     {% endif %}
+
     {% if page.excerpt %}<meta name="description" content="{{ page.excerpt | strip_html }}">{% endif %}
     {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
     {% if page.author %}
@@ -16,7 +17,7 @@ layout: compress
     {% endif %}
     {% include open-graph.html %}
     {% if author.google.plus %}<link rel="author" href="https://plus.google.com/{{ author.google.plus }}"/>{% endif %}
-
+    {% include google-fonts-load.html %}
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
 
     <link href="{{ site.url }}{{ site.baseurl }}/atom.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Atom Feed">
@@ -40,8 +41,6 @@ layout: compress
   <body>
 
     <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/main.css">
-    <link href='https://fonts.googleapis.com/css?family=Andika' rel='stylesheet' type='text/css'>
-
 
     {% include header.html %}
     {% include navigation-sliding.html %}

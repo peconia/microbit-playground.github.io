@@ -17,7 +17,7 @@ layout: compress
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
     <link href="{{ site.url }}{{ site.baseurl }}/atom.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Atom Feed">
     <link href="{{ site.url }}{{ site.baseurl }}/sitemap.xml" type="application/xml" rel="sitemap" title="Sitemap">
-
+    {% include google-fonts-load.html %}
 
 	{% if jekyll.environment == "production" %}
    	{% include google-tracking-code.html %}
@@ -40,8 +40,6 @@ layout: compress
 
   <body id="js-body">
   <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/main.css">
-  <link href='https://fonts.googleapis.com/css?family=Andika' rel='stylesheet' type='text/css'>
-
 
     {% include browser-upgrade.html %}
     {% include header.html %}

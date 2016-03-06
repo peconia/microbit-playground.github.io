@@ -15,5 +15,5 @@ Send your micro:bit programs to jez@geekteacher.co.uk or [see the developer page
 
 {% include post-tabs.html %}
 
-<i class="fa fa-download download-infobox"></i> [Download all programs]({{ site.url }}{{site.baseurl}}/build/microbit-playground-code.zip)
+<i class="fa fa-download download-infobox"></i> [Download all programs]({{site.baseurl}}/build/microbit-playground-code.zip)
 {: .notice-info}
