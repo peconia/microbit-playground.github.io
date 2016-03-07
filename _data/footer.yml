@@ -8,9 +8,12 @@
 
 - title: Developers
   url: /developers/
-  
+
 - title: About
   url: /about/
 
 - title: Terms
   url: /terms/
+
+- title: Github
+  url: https://github.com/microbit-playground/microbit-playground.github.io
