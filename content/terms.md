@@ -25,7 +25,7 @@ This site stands on the shoulders of giants! Here's the list of the content and 
 * Tilty (c) 2016 Giles Booth
 
 <pre>
-{% include_relative LICENSE-apache %}
+{% include_relative LICENSE-mit %}
 </pre>
 
 #### Apache 2.0 License
@@ -52,3 +52,7 @@ I'm very new to all this licensing stuff. Do give me a shout if I've done some w
 ### Other Fun Stuff
 
 This site is not associated with the Python Foundation or any of its projects. We admire from afar.
+
+### More Fun Stuff
+
+<a href="http://microbit.co.uk/"> 'BBC' and 'microbit'</a> are trade marks of the BBC. We're not associated with them either!
