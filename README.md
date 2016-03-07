@@ -40,7 +40,7 @@ Please (please! please!) send me your python code and a brief overview of how yo
 
 The website loads the font Andika with inlined CSS from a CDN. This helps the page load quickly (300 - 600ms!) but means the website looks... _retro_ without an internet connection.
 
-Although Andika is a big font to load--it's over 20k--but it is beautiful. Do read more about [this typeface here.](http://software.sil.org/andika/)
+Although Andika is a big font to load--it's over 20k--it is beautiful. Do read more about [this typeface here.](http://software.sil.org/andika/)
 
 ##### Running `gulp`
 
@@ -79,9 +79,9 @@ Running the website on Github does not load a plugin so loads values from _confi
 
 ## Contributing
 
-Instructions are above or on the [developers page](https://jezdean.github.io/developers/). Programs for beginners are especially welcome.
+Guidance on how to contribute is above or on the [developers page](https://microbit-playground.co.uk/developers/). Changes to code can be made by cloning the repo and pushing back or through the Github web interface. (or email!)
 
-Changes to code or documentation can be made this way or through the Github interface.
+Programs for beginners are especially welcome.
 
 Drop me an email if you have any ideas or want to get involved.
 
