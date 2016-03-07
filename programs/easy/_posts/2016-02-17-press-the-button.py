@@ -1,15 +1,15 @@
-""" 
-by Jez Dean / Public Domain
+"""
+by Various / Public Domain
 """
 
-import microbit from *
+from microbit import *
 
 
 while True:
-    if microbit.button_a.is_pressed() and microbit.button_b.is_pressed():   
-        microbit.display.show(Image.ANGRY)
-    elif microbit.button_a.is_pressed():
-        microbit.display.show(Image.HAPPY)
-    elif microbit.button_b.is_pressed():
-        microbit.display.show(Image.SAD)
-    microbit.sleep(100)
+    if button_a.is_pressed() and button_b.is_pressed():
+        display.show(Image.ANGRY)
+    elif button_a.is_pressed():
+        display.show(Image.HAPPY)
+    elif button_b.is_pressed():
+        display.show(Image.SAD)
+    sleep(100)

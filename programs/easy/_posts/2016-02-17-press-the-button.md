@@ -46,14 +46,14 @@ This program loops forever and waits for a button (or both buttons) to be presse
 #### `if` statements
 
 {% highlight python %}
-    if microbit.button_a.is_pressed() and microbit.button_b.is_pressed():   
-        microbit.display.show(Image.ANGRY)
-    elif microbit.button_a.is_pressed():
-        microbit.display.show(Image.HAPPY)
-    elif microbit.button_b.is_pressed():
-        microbit.display.show(Image.SAD)
+if button_a.is_pressed() and button_b.is_pressed():
+    display.show(Image.ANGRY)
+elif button_a.is_pressed():
+    display.show(Image.HAPPY)
+elif button_b.is_pressed():
+    display.show(Image.SAD)
 {% endhighlight %}
-    
+
 Translated into English this is:
 
 {% highlight python %}
@@ -61,12 +61,12 @@ If button a is pressed and button b is pressed:
     show angry face
 otherwise, if button b is pressed
     show happy face
-otherwise if button b is ressed 
+otherwise if button b is pressed
     show sad face
 {% endhighlight %}
 
 With Python it's really _really_ easy to read the code as English.
-    
+
 Indentation is _really_ important when writing Python. Everything after each condition is intended by a `tab` space.
 {: .notice-warning}
 
@@ -75,7 +75,7 @@ Indentation is _really_ important when writing Python. Everything after each con
 
 The micro:bit api lists other images that can be drawn on the display. The `image` class has many attributes:
 
-| Image.HEART | Image.ASLEEP 
+| Image.HEART | Image.ASLEEP
 | Image.HEART_SMALL | Image.SURPISED |
 | Image.HAPPY | Image.SILLY |
 | Image.SMILE | Image.FABULOUS |
@@ -83,4 +83,4 @@ The micro:bit api lists other images that can be drawn on the display. The `imag
 | Image.CONFUSED | Image.YES |
 | Image.ANGRY | Image.NO |
 
-There is a [full list on the API](http://microbit-micropython.readthedocs.org/en/latest/image.html). Or use the `display` [module](http://microbit-micropython.readthedocs.org/en/latest/display.html) and scroll a message. 
+There is a [full list on the API](http://microbit-micropython.readthedocs.org/en/latest/image.html). Or use the `display` [module](http://microbit-micropython.readthedocs.org/en/latest/display.html) and scroll a message.

@@ -1,13 +1,14 @@
-""" 
+"""
     Snowflakes
-    
+
     Copyright (c) 2016 Eleni Lixourioti
-    
+
     APACHE 2.0 License
-    
+
 """
 
 from microbit import *
+import random
 
 SIDE_SIZE = 3
 
@@ -19,8 +20,7 @@ BRIGHTNESS = {
 
 
 def get_random_corner():
-    return [[random(3) for _ in range(SIDE_SIZE)] for _ in range(SIDE_SIZE)]
-
+    return [[random.randrange(3) for _ in range(SIDE_SIZE)] for _ in range(SIDE_SIZE)]
 
 def get_flake():
     flake = list(get_random_corner())

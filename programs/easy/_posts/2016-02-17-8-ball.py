@@ -1,29 +1,30 @@
-""" 
+"""
     8-Ball Message Generator
-    
+
     Copyright (c) 2016 Multiple Authors
-    
+
     MIT  Licence
-    
-    ************ DOUBLE CHECK THIS WORKS *********************
-    
+
 """
 
-import microbit from *
+from microbit import *
 import random
 
-# an array of strings called MESSAGES
-MESSAGES = ["It is certain",
-            "Dont count on it",
-            "Ask again",
-            "Perhaps",
-            "Do not bet on it,"
-           ]
+answers = [
+    "It is certain",
+    "It is decidedly so",
+    "Cannot predict now",
+    "Concentrate and ask again",
+    "Don't count on it"
+    "My reply is no",
+    "My sources say no",
+    "Outlook not so good"
+    "Very doubtful"
+]
 
-microbit.display.print("8")     # initialise the display
 while True:
-    if microbit.accelerometer.is_gesture('shake') is True:
-            microbit.display.scroll(random.choice(MESSAGES))   # message to show picked at random
-            microbit.sleep(2000)                         # Show the message for 2 Seconds
-            microbit.display.print("8")
-    sleep(100)      #slow down the while loop
+    display.show("8")
+    if accelerometer.was_gesture("shake"):
+        display.clear()
+        sleep(1000)
+        display.scroll(random.choice(answers))

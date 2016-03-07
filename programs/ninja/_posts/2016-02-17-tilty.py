@@ -21,10 +21,10 @@ def count_lit_pixels():
     return pixel_count
 
 pause = 100
-level = 1
+level = 0
 accelerometer_sensitivity=1/300
 
-#set initial position    
+#set initial position
 x, y = 2, 2
 yaccel, xaccel = get_xy()
 y = max(0, min(4, int(y + yaccel)))
@@ -40,7 +40,7 @@ while pause > 0:
         display.set_pixel(x, y, 9)
     else:
         display.set_pixel(newx, newy, 9)
-    pixels = count_lit_pixels() 
+    pixels = count_lit_pixels()
     if pixels == 25:
         play(POWER_UP, wait=False)
         level += 1
@@ -50,7 +50,7 @@ while pause > 0:
         sleep(1000)
         display.clear()
     sleep(pause)
-    
+
 play(NYAN, wait=False)
 display.show('WIN!')
 sleep(200)
