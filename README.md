@@ -38,7 +38,9 @@ Please (please! please!) send me your python code and a brief overview of how yo
 4. serve the website locally with installed gems: `bundle exec jekyll serve`
 5. visit `http://localhost:4000`
 
-The website loads javascript from a CDN. This helps the page load quickly (500ms!) but means the website looks... _retro_ without an internet connection.
+The website loads the font Andika with inlined CSS from a CDN. This helps the page load quickly (300 - 600ms!) but means the website looks... _retro_ without an internet connection.
+
+Although Andika is a big font to load--it's over 20k--but it is beautiful. Do read more about [this typeface here.](http://software.sil.org/andika/)
 
 ##### Running `gulp`
 
