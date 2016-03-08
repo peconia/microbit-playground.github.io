@@ -77,6 +77,15 @@ Running the website on Github does not load a plugin so loads values from _confi
   * noun / verb
   * etc
 
+## Elsewhere
+
+There are other collections of code on the internet. Here's an incomplete list of awesomeness:
+
+* [mavhc's gists][1] - A collection of ninja python programs
+
+[1]: https://gist.github.com/mavhc
+
+
 ## Contributing
 
 Guidance on how to contribute is above or on the [developers page](https://microbit-playground.co.uk/developers/). Changes to code can be made by cloning the repo and pushing back or through the Github web interface. (or email!)

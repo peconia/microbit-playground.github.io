@@ -14,7 +14,7 @@ This site collects  micro:bit MicroPython code. You can use the mu editor to fla
 
 ### Contributing
 
-Contributing is easy---just email your program to jez@geekteacher.co.uk or send it to the GitHub repository. You can also download and run the website from our GitHub repository. There's more information on the developers page.
+Contributing is easy---just email your program to jez@geekteacher.co.uk or send it to the [GitHub repository](https://github.com/microbit-playground/microbit-playground.github.io). You can also download and run the website from our GitHub repository. There's more information on the developers page.
 
 ### How this website works
 
@@ -27,7 +27,11 @@ Below are fine websites to find out more about the micro:bit, Python, and everyt
 ### Python micro:bit Resources
 
 * [mu Editor][1] - A code editor for Python on the micro:bit. This is used to write code for the micro:bit.
-* [Micro:bit muPython API][2] - Developer-friend API docs for MicroPython for the micro:bit.
+* [Micro:bit muPython API][2] - Developer-friend API docs for MicroPython for the micro:bit.zz
+
+### Awesome Collections of micro:bit Code
+
+* [mavhc's gists][5] - A collection of ninja python programs
 
 ### Learn Python Programming
 
@@ -38,3 +42,4 @@ Below are fine websites to find out more about the micro:bit, Python, and everyt
 [2]: http://microbit-micropython.readthedocs.org/en/latest/microbit_micropython_api.html
 [3]: http://www.learnpython.org/
 [4]: https://www.codecademy.com/learn/python
+[5]: https://gist.github.com/mavhc

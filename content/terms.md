@@ -23,6 +23,7 @@ This site stands on the shoulders of giants! Here's the list of the content and 
 * Bopbit (c) 2016 Martin O'Hanlon
 * Snake Game (c) 2016 Martin O'Hanlon
 * Tilty (c) 2016 Giles Booth
+* github Corners (c) 2015 Tim Holman
 
 <pre>
 {% include_relative LICENSE-mit %}
