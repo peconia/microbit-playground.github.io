@@ -1,5 +1,6 @@
 * micro:bit Playground website is at https://microbit-playground.co.uk
 * All micro:bit programs can be [downloaded as a zip file](https://microbit-playground.co.uk/build/microbit-playground-code.zip).
+* the project for the mu microbit python editor is [here on github.](https://github.com/ntoll/mu)
 
 ## About
 
