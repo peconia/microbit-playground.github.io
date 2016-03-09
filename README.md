@@ -17,7 +17,7 @@ Please (please! please!) send me your python code and a brief overview of how yo
 1. Document your code with `/templates/program-template.md` [[download link]](https://raw.githubusercontent.com/microbit-playground/microbit-playground.github.io/master/templates/program-template.md)
 2. Take photographs of your code or project.
 3. Email them to me at jez@geekteacher.co.uk.
-4. _Optional:_ Send through your name, photograph, webiste/twitter and a brief bio. These will be used to make you very cool author bio box!
+4. _Optional:_ Send through your name, photograph, website/twitter and a brief bio. These will be used to make you very cool author bio box!
 
 ##### Geeky Way:
 

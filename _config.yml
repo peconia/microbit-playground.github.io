@@ -9,8 +9,6 @@ url:  https://microbit-playground.co.uk
 subscribe_rss: /atom.xml
 baseurl:
 
-
-
 # default images
 logo: 120x120.gif
 teaser: 400x250.gif
