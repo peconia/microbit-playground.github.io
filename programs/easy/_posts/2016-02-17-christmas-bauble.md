@@ -42,20 +42,20 @@ This simple program displays "ho! ho! ho!" on the micro:bit. Let's go through it
 
 `from microbit import *`
 
-This imports the microbit module into the program. `*` imports _everything_ in the module. Start all your programs with this.
+This imports the microbit module into the program. `*` imports _everything_ in the module. Start all your programs with this. It's simply telling Python that it'll need to use code to talk to the micro:bit.
 
 #### Scroll the Text
 `display.scroll("ho ho ho")`
 
-Scrolls the text across the microbit's display. Everything inside the `"` is shown in the display.
+Scrolls the text across the micro:bit's display. Everything inside the `"` is shown in the display. Characters within `"` are called strings.
 
 ### Reading the API
 
-[The microbit API for the display module](http://microbit-micropython.readthedocs.org/en/latest/display.html) describes a `delay` parameter for the `scroll` function.
+[The microbit API for the display module](http://microbit-micropython.readthedocs.org/en/latest/display.html) describes a `delay` parameter for the `scroll` method.
 
 `display.scroll("ho ho ho", delay=500)` updates the display every 500 milliseconds (or half a second). It slows down the speed of the scrolling text.
 
-The API documentation has information about every function. Try reading it when you're coding for ideas. It's not as scary as it looks!
+The API documentation has information about every function and method. Try reading it when you're coding for ideas. It's not as scary as it looks! The Python community are also famously helpful - search online for mailing lists and message boards that may contain the help you need. If in doubt, ask for help with as much information as possible.
 
 ### Going Further
 
