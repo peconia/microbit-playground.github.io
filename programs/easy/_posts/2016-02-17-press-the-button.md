@@ -39,9 +39,9 @@ This program loops forever and waits for a button (or both buttons) to be presse
 
 #### `while True:` loop
 
-![Conditional loops are intented in Python.]({{ site.baseurl }}/images/2016-02-17-press-the-button-1.gif)
+![Conditional loops are indented in Python.]({{ site.baseurl }}/images/2016-02-17-press-the-button-1.gif)
 
-`while True:` is a statement that's always true. Whenever we use it in a Python program it means whatever inside the loop is repeated forever. The line after the statement is indented. This indicates it is inside the loop.  
+`while True:` is a statement that's always true. Whenever we use it in a Python program it means whatever inside the loop is repeated forever. The line after the statement is indented. This indicates it is inside the loop.
 
 #### `if` statements
 
@@ -59,15 +59,15 @@ Translated into English this is:
 {% highlight python %}
 If button a is pressed and button b is pressed:
     show angry face
-otherwise, if button b is pressed
+else, if button b is pressed
     show happy face
-otherwise if button b is pressed
+otherwise, if button b is pressed
     show sad face
 {% endhighlight %}
 
 With Python it's really _really_ easy to read the code as English.
 
-Indentation is _really_ important when writing Python. Everything after each condition is intended by a `tab` space.
+Indentation is _really_ important when writing Python. Everything after each condition is intended by a `tab` (usually 4 spaces).
 {: .notice-warning}
 
 
@@ -83,4 +83,4 @@ The micro:bit api lists other images that can be drawn on the display. The `imag
 | Image.CONFUSED | Image.YES |
 | Image.ANGRY | Image.NO |
 
-There is a [full list on the API](http://microbit-micropython.readthedocs.org/en/latest/image.html). Or use the `display` [module](http://microbit-micropython.readthedocs.org/en/latest/display.html) and scroll a message.
+There is a [full list on the API](http://microbit-micropython.readthedocs.org/en/latest/image.html). Or use the `display` [module](http://microbit-micropython.readthedocs.org/en/latest/display.html) and display a picture.

@@ -10,7 +10,7 @@
 from microbit import *
 import random
 
-# create array of strings called HOUSES
+# create a list of strings called HOUSES
 HOUSES   = ["Gryffindor",
             "Slytherin",
             "Ravenclaw",
